@@ -180,6 +180,89 @@ section {
 .social-links a:hover {
     color: #0d6efd;
 }
+/* AFFIRMATION ROTATION */
+/* AFFIRMATION CARD */
+.affirm-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+/* Image */
+.affirm-card img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+}
+
+/* Overlay container */
+.affirm {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.65); /* soft overlay */
+    backdrop-filter: blur(4px);
+}
+
+/* Rotating text */
+.rotate span {
+    position: absolute;
+    opacity: 0;
+    max-width: 90%;
+
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #374151;
+
+    animation: rotateAffirm 48s infinite;
+}
+
+/* Timing */
+.rotate span:nth-child(1) {
+    animation-delay: 0s;
+}
+.rotate span:nth-child(2) {
+    animation-delay: 12s;
+}
+.rotate span:nth-child(3) {
+    animation-delay: 24s;
+}
+.rotate span:nth-child(4) {
+    animation-delay: 36s;
+}
+
+/* Animation */
+@keyframes rotateAffirm {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.rotate span {
+    font-weight: 600;
+}
+.affirm-card:hover .rotate span {
+    animation-play-state: paused;
+}
 
 /* =========================
    MOBILE FIXES
