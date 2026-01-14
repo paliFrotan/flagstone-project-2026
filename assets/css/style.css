@@ -277,6 +277,49 @@ section {
     width: auto; /* keeps proportions */
     display: block;
 }
+/* Base modal styling */
+.modal-content {
+    border-radius: 16px;
+    overflow: hidden;
+    border: none;
+}
+
+/* Modal headers */
+.modal-header {
+    color: #fff;
+    padding: 1.5rem;
+}
+
+/* Modal bodies */
+.modal-body {
+    padding: 1.75rem;
+}
+
+/* Themed modals */
+.modal-blue .modal-header {
+    background: linear-gradient(135deg, #0d6efd, #4dabf7);
+}
+
+.modal-green .modal-header {
+    background: linear-gradient(135deg, #198754, #51cf66);
+}
+
+.modal-yellow .modal-header {
+    background: linear-gradient(135deg, #ffc107, #ffd43b);
+    color: #212529;
+}
+
+.modal-grey .modal-header {
+    background: linear-gradient(135deg, #6c757d, #adb5bd);
+}
+/* Modal image */
+.modal-image {
+    width: 45%;
+    height: 220px; /* consistent height */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
 
 /* =========================
    MOBILE FIXES
