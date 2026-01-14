@@ -124,8 +124,8 @@ section {
 
 /* Card icons */
 .icon {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     display: block;
     margin: 1rem auto;
@@ -262,6 +262,20 @@ section {
 }
 .affirm-card:hover .rotate span {
     animation-play-state: paused;
+}
+.resources-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    border-radius: 16px;
+    margin: 2rem 0 0;
+}
+.site-logo {
+    height: 64px; /* increase this value */
+    width: auto; /* keeps proportions */
+    display: block;
 }
 
 /* =========================
